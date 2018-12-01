@@ -8,11 +8,14 @@
     <a-scene>
       <a-assets>
         <img id="sphereTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+        <a-asset-item id="tree-obj" src="/Assets/testtree/testtree.obj"></a-asset-item>
+        <a-asset-item id="tree-mtl" src="/Assets/testtree/testtree.mtl"></a-asset-item>
       </a-assets>
-      <a-ring color="teal" radius-inner="1" radius-outer="2" scale="2 2 2" position="0 2 -10">
+<a-entity obj-model="obj:/Assets/testtree/testtree.obj;mtl:/Assets/testtree/testtree.mtl" scale="0.1 0.1 0.1" position="5.441 -2.985 -9.122" rotation="-54.115 8.529 -56.33"></a-entity>
+      <!--<a-ring color="teal" radius-inner="1" radius-outer="2" scale="2 2 2" position="0 2 -10">
           <a-sphere src="#sphereTexture" position="1 0 3"></a-sphere>
       </a-ring>
-      <a-plane rotation="-45 0 -5" position="0 2 -3" color="white"></a-plane>
+      <a-plane rotation="-45 0 -5" position="0 2 -3" color="white"></a-plane>-->
       <!-- Out of the box environment! -->
       <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
       <a-sky color="blue"></a-sky>
