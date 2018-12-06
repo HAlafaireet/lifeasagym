@@ -11,6 +11,10 @@
           var el1 = document.getElementById("ui1");
           var el2 = document.getElementById("ui2");
           var el3 = document.getElementById("ui3");
+          var el4 = document.getElementById("ui4");
+          var el5 = document.getElementById("ui5");
+          var el6 = document.getElementById("ui6");
+          var el7 = document.getElementById("ui7");
           var counter=2;
           console.log(el1);
           el.addEventListener('mousedown', function (evt) {
@@ -19,19 +23,67 @@
                 el1.setAttribute('visible','true');
                 el2.setAttribute('visible','false');
                 el3.setAttribute('visible','false');
+                el4.setAttribute('visible','false');
+                el5.setAttribute('visible','false');
+                el6.setAttribute('visible','false');
+                el7.setAttribute('visible','false');
                 break;
               case 2:
                 el1.setAttribute('visible','false');
                 el2.setAttribute('visible','true');
                 el3.setAttribute('visible','false');
+                el4.setAttribute('visible','false');
+                el5.setAttribute('visible','false');
+                el6.setAttribute('visible','false');
+                el7.setAttribute('visible','false');
                 break;  
               case 3:
                 el1.setAttribute('visible','false');
                 el2.setAttribute('visible','false');
                 el3.setAttribute('visible','true');
+                el4.setAttribute('visible','false');
+                el5.setAttribute('visible','false');
+                el6.setAttribute('visible','false');
+                el7.setAttribute('visible','false');
+                break;
+              case 4:
+                el1.setAttribute('visible','false');
+                el2.setAttribute('visible','false');
+                el3.setAttribute('visible','false');
+                el4.setAttribute('visible','true');
+                el5.setAttribute('visible','false');
+                el6.setAttribute('visible','false');
+                el7.setAttribute('visible','false');
+                break;
+              case 5:
+                el1.setAttribute('visible','false');
+                el2.setAttribute('visible','false');
+                el3.setAttribute('visible','false');
+                el4.setAttribute('visible','false');
+                el5.setAttribute('visible','true');
+                el6.setAttribute('visible','false');
+                el7.setAttribute('visible','false');
+                break;
+              case 6:
+                el1.setAttribute('visible','false');
+                el2.setAttribute('visible','false');
+                el3.setAttribute('visible','false');
+                el4.setAttribute('visible','false');
+                el5.setAttribute('visible','false');
+                el6.setAttribute('visible','true');
+                el7.setAttribute('visible','false');
+                break;
+              case 7:
+                el1.setAttribute('visible','false');
+                el2.setAttribute('visible','false');
+                el3.setAttribute('visible','false');
+                el4.setAttribute('visible','false');
+                el5.setAttribute('visible','false');
+                el6.setAttribute('visible','false');
+                el7.setAttribute('visible','true');
                 break;
             }
-            if (counter >=3)
+            if (counter >=7)
             {
               counter=1;
             }
@@ -49,24 +101,69 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
       <a-image id="left-tile" class="tile" position="2.5 -2 -8" src="Assets/UI/Icons/1x Sized/New_path.png" width="2" height="1"></a-image>
-      <a-image id="left-tile" class="tile" position="0 -2 -8" src="Assets/UI/Icons/1x Sized/Current Location.png" width="2" height="1">
-        <a-animation
-                    attribute="visible"
-                    dur="5000"
-                    from="true"
-                    to="false"
-                    delay="500"
-                    easing="linear"
-                    repeat="indefinite">
-        </a-animation>
+     
       </a-image>
       <a-entity id="ui1">
         <a-image class="tile" position="0 0 -8" src="Assets/UI/demo_icons/01_Welcome.png" width="3" height="3"></a-image>
-        <a-image class="tile" position="2 2 -8" src="Assets/UI/demo_icons/Time_on_top/1005_Set_up.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="3 1.5 -8" src="Assets/UI/demo_icons/Time_on_top/1005_Set_up.png" width="3" height="3"></a-image>
+      </a-entity>
+      <a-entity id="ui2" visible=false>
+        <a-image class="tile" position="0 0 -8" src="Assets/UI/demo_icons/02_Upcoming_class.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="3 1.5 -8" src="Assets/UI/demo_icons/Time_on_top/1005_Set_up.png" width="3" height="3"></a-image>
+      </a-entity>
+      <a-entity id="ui3" visible=false>
+        <a-image class="tile" position="0 0 -8" src="Assets/UI/demo_icons/03_Route_selection_middle.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="3 1.5 -8" src="Assets/UI/demo_icons/Time_on_top/1005_Set_up.png" width="3" height="3"></a-image>
+      </a-entity>
+      <a-entity id="ui4" visible=false>
+        <a-image class="tile" position="3 -.5 -8" src="Assets/UI/demo_icons/04_Route_confirm.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="3 1.5 -8" src="Assets/UI/demo_icons/Time_on_top/1005_Set_up.png" width="3" height="3"></a-image>
+      </a-entity>
+      <a-entity id="ui5" visible=false>
+        <a-image class="tile" position="2 -1.5 -8" src="Assets/UI/demo_icons/09_300ft_Squat.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="2 1.5 -8" src="Assets/UI/demo_icons/Time_on_top/1009_300ft.png" width="3" height="3"></a-image>
+        <a-image id="left-tile" class="tile" position="0 -2 -8" src="Assets/UI/demo_icons/Arrow/Arrow_straight.png" width="2" height="2">
+          <a-animation
+                      attribute="visible"
+                      dur="5000"
+                      from="true"
+                      to="false"
+                      delay="500"
+                      easing="linear"
+                      repeat="indefinite">
+          </a-animation>
+      </a-entity>
+      <a-entity id="ui6" visible=false>
+        <a-image class="tile" position="2 -1.5 -8" src="Assets/UI/demo_icons/10_100ft_Squat.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="2 1.5 -8" src="Assets/UI/demo_icons/Time_on_top/1016_100ft.png" width="3" height="3"></a-image>
+        <a-image id="left-tile" class="tile" position="0 -2 -8" src="Assets/UI/demo_icons/Arrow/Arrow_straight.png" width="2" height="2">
+          <a-animation
+                      attribute="visible"
+                      dur="5000"
+                      from="true"
+                      to="false"
+                      delay="500"
+                      easing="linear"
+                      repeat="indefinite">
+          </a-animation>
+      </a-entity>
+      <a-entity id="ui7" visible=false>
+        <a-image class="tile" position="2 -1.5 -8" src="Assets/UI/demo_icons/11_Doing_Squat.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="2 1.5 -8" src="Assets/UI/demo_icons/Time_on_top/1016_100ft.png" width="3" height="3"></a-image>
+        <a-image id="left-tile" class="tile" position="0 -2 -8" src="Assets/UI/demo_icons/Arrow/Arrow_straight.png" width="2" height="2">
+          <a-animation
+                      attribute="visible"
+                      dur="5000"
+                      from="true"
+                      to="false"
+                      delay="500"
+                      easing="linear"
+                      repeat="indefinite">
+          </a-animation>
       </a-entity>
      
-      <a-image id="ui2" visible="false" class="tile" position="0 0 -8" src="Assets/UI/Screens/2x Sized/Screen 2@2x.png" width="2" height="3"></a-image>
-      <a-image id="ui3" visible="false" class="tile" position="0 0 -8" src="Assets/UI/Screens/2x Sized/Screen 3@2x.png" width="2" height="3"></a-image>
+     
+      
     <!-- create your content here. just a box for now -->
     <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
     <!-- define a camera which will move according to the marker position -->
