@@ -535,6 +535,9 @@
 </script>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+      <a-assets>
+          <audio id="notification" src="Assets/quite-impressed.mp3" preload="auto"></audio>
+        </a-assets>
     <a-camera></a-camera>
      
       </a-image>
@@ -573,8 +576,8 @@
           <a-image class="tile" position="2.7 .7 -8" src="Assets/UI/demov2/Time_on_top/1007_after_route_selection.png" width="3" height="3"></a-image>
       </a-entity>
       <a-entity id="ui7" position='0 0 0' visible=false>
-        <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/06_300ft_climbing.png" width="3" height="3"></a-image>
-        <a-sound src="src: Assets/quite-impressed.mp3" autoplay="true" position="0 2 5"></a-sound>
+        <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/09_300ft_jogging.png" width="3" height="3"></a-image>
+        <a-sound src="#notification" autoplay="true" position="0 2 5"></a-sound>
         <a-image class="tile" position="2.7 .7 -8" src="Assets/UI/demov2/Time_on_top/1010_300ft.png" width="3" height="3"></a-image>
         <a-image id="left-tile" class="tile" position="0 -1.2 -8" src="Assets/UI/demov2/Arrow/Arrow_straight.png" width="2" height="2">
           <a-animation
@@ -589,7 +592,7 @@
         </a-image>
       </a-entity>
       <a-entity id="ui8" position='0 0 0' visible=false>
-        <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/06_100ft_climbing.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/10_100ft_jogging.png" width="3" height="3"></a-image>
         <a-image class="tile" position="2.7 .7 -8" src="Assets/UI/demov2/Time_on_top/1012_100ft.png" width="3" height="3"></a-image>
         <a-image id="left-tile" class="tile" position="0 -1.2 -8" src="Assets/UI/demov2/Arrow/Arrow_straight.png" width="2" height="2">
           <a-animation
@@ -604,7 +607,7 @@
         </a-image>
       </a-entity>
       <a-entity id="ui9" position='0 0 0' visible=false>
-        <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/07_100ft_climbing_accepted.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/11_100ft_jogging_accepted.png" width="3" height="3"></a-image>
         <a-image class="tile" position="2.7 .7 -8" src="Assets/UI/demov2/Time_on_top/1012_100ft.png" width="3" height="3"></a-image>
         <a-image id="left-tile" class="tile" position="0 -1.2 -8" src="Assets/UI/demov2/Arrow/Arrow_straight.png" width="2" height="2">
           <a-animation
@@ -619,7 +622,7 @@
         </a-image>
       </a-entity>
       <a-entity id="ui10" position='0 0 0' visible=false>
-        <a-image class="tile" position="3.3 -.2 -8" src="Assets/UI/demov2/08_start_climbing.png" width="3" height="3"></a-image>
+        <a-image class="tile" position="3.3 -.2 -8" src="Assets/UI/demov2/12_start_jogging.png" width="3" height="3"></a-image>
         <a-image class="tile" position="2.7 .7 -8" src="Assets/UI/demov2/Time_on_top/1013_start_climbing.png" width="3" height="3"></a-image>
         <a-image id="left-tile" class="tile" position="0 -1.2 -8" src="Assets/UI/demov2/Arrow/Arrow_straight.png" width="2" height="2">
           <a-animation
@@ -693,7 +696,7 @@
         </a-image>
       </a-entity>
       <a-entity id="ui15" position='0 0 0' visible=false>
-          <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/10_100ft_jogging.png" width="3" height="3"></a-image>
+          <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/06_100ft_climbing.png" width="3" height="3"></a-image>
           <a-image class="tile" position="2.7 .7 -8" src="Assets/UI/demov2/Time_on_top/1018_100ft.png" width="3" height="3"></a-image>
           <a-image id="left-tile" class="tile" position="0 -1.2 -8" src="Assets/UI/demov2/Arrow/Arrow_straight.png" width="2" height="2">
             <a-animation
@@ -708,7 +711,7 @@
           </a-image>
       </a-entity>
       <a-entity id="ui16" position='0 0 0' visible=false>
-          <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/11_100ft_jogging_accepted.png" width="3" height="3"></a-image>
+          <a-image class="tile" position="2.7 -.2 -8" src="Assets/UI/demov2/07_100ft_climbing_accepted.png" width="3" height="3"></a-image>
           <a-image class="tile" position="2.7 .7 -8" src="Assets/UI/demov2/Time_on_top/1018_100ft.png" width="3" height="3"></a-image>
           <a-image id="left-tile" class="tile" position="0 -1.2 -8" src="Assets/UI/demov2/Arrow/Arrow_straight.png" width="2" height="2">
             <a-animation
